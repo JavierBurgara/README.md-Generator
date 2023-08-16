@@ -54,4 +54,10 @@ const questions = [
 ];
 
 
-lfwmflmlmw
+// Writing README.md File
+function writeToFile(fileName,data) {
+  return fs.writeFileSync(path.join(process.cwd(),fileName),data);
+}
+
+// Initalizing app
+function init()
