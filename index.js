@@ -7,49 +7,49 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
-        message: 'Please name your Project',
         name: 'title',
+        message: 'Please name your Project',
       },
       {
         type: 'input',
-        message: 'Please describe the purpose and functionality of this project.',
         name: 'description',
+        message: 'Please describe the purpose and functionality of this project.',
       },
       {
         type: 'checkbox',
-        message: 'Please select a license applicable to this project.',
         name: 'License',
+        message: 'Please select a license applicable to this project.',
         chioces: ['MIT','APACHE2.0','Boost1.0','MPL2.0','BSD2','BSD3','none'],
       },
       {
         type: 'input',
-        message: 'List any project dependencies here.',
         name: 'require',
+        message: 'List any project dependencies here.',
       },
       {
         type: 'input',
-        message: 'State the languages or technologies associated with this project.',
         name: 'usage',
+        message: 'State the languages or technologies associated with this project.',
       },
       {
         type: 'input',
-        message: 'What is your GitHub username?',
         name: 'creator',
+        message: 'What is your GitHub username?',
       },
       {
         type: 'input',
-        message: 'State your full name.',
         name: 'name',
+        message: 'State your full name.',
       },
       {
         type: 'input',
-        message: 'Provide a valid email address',
         name: 'email',
+        message: 'Provide a valid email address',
       },
       {
         type: 'input',
-        message: 'Provide walkthrough of required test if applicable.',
         name: 'test',
+        message: 'Provide walkthrough of required test if applicable.',
       },
 ];
 
@@ -62,8 +62,8 @@ function writeToFile(fileName,data) {
 // Initalizing app
 function init() {
   inquirer.prompt(questions).then((response) => {
-    console.log('Creating Professional README.md File....');
-    writeToFile('./utlis/READEME.md' , generateMarkdown({...response}));
+    console.log('Creating Professional README.md File...');
+    writeToFile('./Reademe Generator/README.md' , generateMarkdown({...response}));
   });
 }
 init();
