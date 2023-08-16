@@ -60,4 +60,10 @@ function writeToFile(fileName,data) {
 }
 
 // Initalizing app
-function init()
+function init() {
+  inquirer.prompt(questions).then((response) => {
+    console.log('Creating Professional README.md File....');
+    writeToFile('./utlis/READEME.md' , generateMarkdown({...response}));
+  });
+}
+init();
