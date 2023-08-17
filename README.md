@@ -1,5 +1,5 @@
-# g
-  by g
+# README-Generator
+  by Javier Burgara
   ![Github license](https://img.sheilds.io/badge/license-undefined-yellowgreen.svg)
   ## Table of Contents
   * [Description](#description)
@@ -12,20 +12,20 @@
 * [license](#license)
 
   ## Description
-  g
+  using node and understanding how you call back data and use it
   ## Requirement
-  g
+  Inquirer 8.2.4
   ## Usage
-  g
+  JavaScript,Node,JSON
   ## Contact-Me
-  * Name - g
-  * Email - g
-  * Github - [g](https://github.com/g/)
+  * Name - Javier Burgara
+  * Email - Javierburgara150@yahoo.com
+  * Github - [JavierBurgara](https://github.com/JavierBurgara/)
   ## Contributors
   undefined
   ## Testing
   ```
-  g
+  N/A
   ```
   ## License
       Licensed under the undefined license.
