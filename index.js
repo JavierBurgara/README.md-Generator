@@ -19,7 +19,7 @@ const questions = [
         type: 'checkbox',
         name: 'License',
         message: 'Please select a license applicable to this project.',
-        chioces: ['MIT','APACHE2.0','Boost1.0','MPL2.0','BSD2','BSD3','none'],
+        choices: ['MIT','APACHE2.0','Boost1.0','MPL2.0','BSD2','BSD3','none'],
       },
       {
         type: 'input',
@@ -63,7 +63,7 @@ function writeToFile(fileName,data) {
 function init() {
   inquirer.prompt(questions).then((response) => {
     console.log('Creating Professional README.md File...');
-    writeToFile('./Reademe Generator/README.md' , generateMarkdown({...response}));
+    writeToFile('./README.md' , generateMarkdown({...response}));
   });
 }
 init();
